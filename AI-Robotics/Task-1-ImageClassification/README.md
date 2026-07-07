@@ -12,9 +12,9 @@ The model was trained using [Teachable Machine](https://teachablemachine.withgoo
 ## Code
 The script loads the exported Keras model, preprocesses an input image (resize to 224x224, normalize), and predicts its class with a confidence score.
 
-See [predict.py](code/predict.py)
+See [predict.py](AI-Robotics/Task-1-ImageClassification/code/predict.py)
 
 ## Output
 The model correctly classified the test image as cat with a confidence score of 0.9995.
 
-![Prediction Output](images/AITask1.png)
+![Prediction Output](images/AiTask1.png)
