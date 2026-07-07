@@ -13,7 +13,7 @@ The circuit was built and simulated using Tinkercad, connecting 4 servo motors t
 [Try the circuit on Tinkercad](https://www.tinkercad.com/things/ibdyJdXobLg-circuit?sharecode=aZX9URD-YRiuRIGHZWKpwT8znb8Sz2a58n1fWP0uOd0)
 
 ## Code
-See [servo_control](code/servo_control)
+See [servo_control.ino](code/servo_control.ino)
 
 ## Demo Video
 [Watch the video here](https://drive.google.com/file/d/1cK1zHUgOKbqKjlbezvj_VcvjdVC5XKW-/view?usp=drivesdk)
