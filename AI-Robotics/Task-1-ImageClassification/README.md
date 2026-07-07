@@ -17,4 +17,4 @@ See [predict.py](code/predict.py)
 ## Output
 The model correctly classified the test image as cat with a confidence score of 0.9995.
 
-![Prediction Output](images/output-screenshot.jpg)
+![Prediction Output](images/AITask1.png)
