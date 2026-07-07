@@ -9,6 +9,8 @@
 ## Model Training
 The model was trained using [Teachable Machine](https://teachablemachine.withgoogle.com) with 3 classes (cat, dog, fish), then exported in TensorFlow → Keras format (`keras_model.h5` and `labels.txt`).
 
+Model files: model/keras_model.h5, model/labels.txt
+
 ## Code
 The script loads the exported Keras model, preprocesses an input image (resize to 224x224, normalize), and predicts its class with a confidence score.
 
