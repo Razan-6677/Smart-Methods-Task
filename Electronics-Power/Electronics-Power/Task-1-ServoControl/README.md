@@ -1,4 +1,4 @@
-# Task 1 - Servo Motor Control (4x Servo Sweep + Hold)
+# Task 1 - Servo Motor Control 
 
 ## Task Description
 Program 4 servo motors to perform the following actions:
