@@ -20,19 +20,10 @@ The website is deployed using [InfinityFree](https://www.infinityfree.com) hosti
 ![Credentials](screenshots/screenshot-credentials.png)
 ![Contact](screenshots/screenshot-contact.png)
 
-## Sections
-- Hero — introduction and short bio
-- Origin — my journey into robotics, from a childhood inspired by WALL·E to winning 1st place in a middle school robot car competition
-- Stack — programming languages, microcontrollers, and tools I work with
-- Builds — featured projects (InMoov humanoid robot, obstacle-avoidance robot car, scientific calculator, veterinary clinic system)
-- Credentials — certifications and training completed
-- Contact — ways to reach me
 
 ## Files
 - [index.html](index.html) — page structure and content
 - [style.css](style.css) — styling and layout
-- images/ — project photos used throughout the site
-- screenshots/ — screenshots of the live website
 
 ## Tech Used
 HTML, CSS
