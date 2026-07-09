@@ -13,12 +13,12 @@ The website is deployed using [InfinityFree](https://www.infinityfree.com) hosti
 
 ## Screenshots
 
-![Hero Section](screenshots/screenshot-hero.png)
-![Origin Story](screenshots/screenshot-origin.png)
-![Stack](screenshots/screenshot-stack.png)
-![Builds](screenshots/screenshot-builds.png)
-![Credentials](screenshots/screenshot-credentials.png)
-![Contact](screenshots/screenshot-contact.png)
+![Hero Section](images/screenshot-hero.png)
+![Origin Story](images/screenshot-origin.png)
+![Stack](images/screenshot-stack.png)
+![Builds](images/screenshot-builds.png)
+![Credentials](images/screenshot-credentials.png)
+![Contact](images/screenshot-contact.png)
 
 
 ## Files
