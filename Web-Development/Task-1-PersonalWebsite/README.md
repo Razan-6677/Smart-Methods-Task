@@ -11,7 +11,7 @@ The website is deployed using [InfinityFree](https://www.infinityfree.com) hosti
 
 🔗 [razan.kesug.com](https://razan.kesug.com/?i=1)
 
-## Screenshots
+## images
 
 ![Hero Section](images/screenshot-hero.png)
 ![Origin Story](images/screenshot-origin.png)
