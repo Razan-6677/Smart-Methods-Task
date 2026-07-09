@@ -13,14 +13,14 @@ The website is deployed using [InfinityFree](https://www.infinityfree.com) hosti
 
 ## Screenshots
 
-![Hero Section](Screenshots/IMG_4632.png)
-![Origin Story Part 1](Screenshots/IMG_4633.png)
-![Origin Story Part 2](Screenshots/IMG_4634.png)
-![Toolbox & Tech Stack](Screenshots/IMG_4635.png)
-![Hardware & Robotics Builds](Screenshots/IMG_4636.png)
-![Software Builds](Screenshots/IMG_4637.png)
-![Certifications & Training](Screenshots/IMG_4638.png)
-![Contact Section](Screenshots/IMG_4639.png)
+![Hero Section](images/IMG_4632.png)
+![Origin Story Part 1](images/IMG_4633.png)
+![Origin Story Part 2](images/IMG_4634.png)
+![Toolbox & Tech Stack](images/IMG_4635.png)
+![Hardware & Robotics Builds](images/IMG_4636.png)
+![Software Builds](images/IMG_4637.png)
+![Certifications & Training](images/IMG_4638.png)
+![Contact Section](images/IMG_4639.png)
 
 ## Files
 - [index.html](code/index.html) — page structure and content
