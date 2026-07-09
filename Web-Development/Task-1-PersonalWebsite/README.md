@@ -11,19 +11,20 @@ The website is deployed using [InfinityFree](https://www.infinityfree.com) hosti
 
 🔗 [razan.kesug.com](https://razan.kesug.com/?i=1)
 
-## images
+## Screenshots
 
-![Hero Section](images/screenshot-hero.png)
-![Origin Story](images/screenshot-origin.png)
-![Stack](images/screenshot-stack.png)
-![Builds](images/screenshot-builds.png)
-![Credentials](images/screenshot-credentials.png)
-![Contact](images/screenshot-contact.png)
-
+![Hero Section](Screenshots/IMG_4632.png)
+![Origin Story Part 1](Screenshots/IMG_4633.png)
+![Origin Story Part 2](Screenshots/IMG_4634.png)
+![Toolbox & Tech Stack](Screenshots/IMG_4635.png)
+![Hardware & Robotics Builds](Screenshots/IMG_4636.png)
+![Software Builds](Screenshots/IMG_4637.png)
+![Certifications & Training](Screenshots/IMG_4638.png)
+![Contact Section](Screenshots/IMG_4639.png)
 
 ## Files
-- [index.html](index.html) — page structure and content
-- [style.css](style.css) — styling and layout
+- [index.html](code/index.html) — page structure and content
+- [style.css](code/style.css) — styling and layout
 
 ## Tech Used
 HTML, CSS
