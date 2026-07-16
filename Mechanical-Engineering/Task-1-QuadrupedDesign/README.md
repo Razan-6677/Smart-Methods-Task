@@ -3,7 +3,7 @@
 ## 1) Body Shape and Frame
 The body is a simple box-shaped frame representing the robot's torso. The material used is PLA+ plastic, because it is lightweight, reduces the load on the servos, and is easy to manufacture.
 
-![Robot Overview](Robot-Overview.PNG)
+![Robot Overview](images/Robot-Overview.PNG)
 
 ## 2) Leg Design
 Each of the robot's four legs is made up of 3 parts, with the following lengths:
@@ -55,7 +55,7 @@ So the robot's total weight should stay under 5 kg, ideally around 3.5–4 kg to
 ## 6) Stability and Center of Gravity
 The robot's center of gravity will be located roughly at the middle of its body. The four legs will be spread apart from each other to allow greater stability, and the support base will shrink during walking — so it's essential to ensure the center of gravity always stays within that support base.
 
-![Center of Gravity](Center-Robot%20.PNG)
+![Center of Gravity](images/Center-Robot%20.PNG)
 
 ## 7) Proposed Gait
 The robot's walking method will use a Trot gait, in which two diagonal pairs of legs move alternately. For example, the front-right leg and the back-left leg move forward together, while the front-left leg and the back-right leg stay planted on the ground to support the weight — then the two pairs switch roles.
