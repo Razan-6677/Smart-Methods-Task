@@ -15,7 +15,7 @@ The keychain was sketched and extruded into a 3D solid body using Onshape.
 
 ![Spiderman Keychain](images/IMG%204705.png)
 
-<a href="https://cad.onshape.com/documents/f337e3f3314e46683abdd6fe/w/4f2dce4f16c4b5a1d9ac887f/e/55ed7159b2d8c51a28b5ec69?renderMode=0&uiState=6a58b18e1745280725d7397a" target="_blank">View the design on Onshape</a>
+[View the design on Onshape](https://cad.onshape.com/documents/f337e3f3314e46683abdd6fe/w/4f2dce4f16c4b5a1d9ac887f/e/55ed7159b2d8c51a28b5ec69?renderMode=0&uiState=6a58b4d01745280725d74216)
 
 ## Files
 
