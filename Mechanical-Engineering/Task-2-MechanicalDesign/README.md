@@ -18,4 +18,4 @@ For this task, I chose to design the **Spiderman Logo**.
 ## Output
 Here is a preview of the final 3D extruded model in Onshape:
 
-![Spiderman Keychain](images/spiderman.png)
+![Spiderman Keychain](images/IMG_4705.png)
