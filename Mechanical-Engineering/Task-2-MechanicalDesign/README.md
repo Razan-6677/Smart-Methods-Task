@@ -19,7 +19,7 @@ The keychain was sketched and extruded into a 3D solid body using Onshape.
 
 ## Files
 
-See [spiderman_keychain.stl](files/spiderman_keychain.stl)
+See [spiderman_keychain.stl](Mechanical-Engineering/Task-2-MechanicalDesign/files/spiderman_keychain.stl)
 
 ## Demo Video
 
