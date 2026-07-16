@@ -17,8 +17,7 @@ The keychain was sketched and extruded into a 3D solid body using Onshape.
 
 **Onshape Design Link:** [Click here to view the 3D model](https://cad.onshape.com/documents/f337e3f3314e46683abdd6fe/w/4f2dce4f16c4b5a1d9ac887f/e/55ed7159b2d8c51a28b5ec69)
 
-> > **Note:** If you get a "403 Forbidden" error, just copy the link and paste it into a new tab. Onshape sometimes blocks direct clicks from GitHub.
-> >
+> **Note:** If you get a "403 Forbidden" error, just copy the link and paste it into a new tab. Onshape sometimes blocks direct clicks from GitHub.
 
 ## Files
 
