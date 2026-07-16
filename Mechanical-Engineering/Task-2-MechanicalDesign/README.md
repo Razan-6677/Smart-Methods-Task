@@ -13,13 +13,13 @@ The objective of this task is to practice 2D sketching and 3D extrusion by desig
 
 The keychain was sketched and extruded into a 3D solid body using Onshape.
 
-![Spiderman Keychain](images/IMG_4705.png)
+![Spiderman Keychain](images/IMG%204705.png)
 
 [View the design on Onshape](https://cad.onshape.com/documents/f337e3f3314e46683abdd6fe/w/4f2dce4f16c4b5a1d9ac887f/e/55ed7159b2d8c51a28b5ec69)
 
 ## Files
 
-See [spiderman_keychain.stl](Mechanical-Engineering/Task-2-MechanicalDesign/files/spiderman_keychain.stl)
+See [spiderman_keychain.stl](https://github.com/Razan-6677/Smart-Methods-Task/blob/main/Mechanical-Engineering/Task-2-MechanicalDesign/files/spiderman_keychain.stl)
 
 ## Demo Video
 
