@@ -13,9 +13,9 @@ The model was implemented using OpenCV's pre-trained Haar Cascade Classifiers:
 ## Code
 The script loads the input image, converts it to grayscale for processing, and applies the `detectMultiScale` method to locate the features. It then uses `cv2.rectangle` to draw labeled bounding boxes around the detected areas.
 
-See [AiTask2.py](AiTask2.py)
+See [AiTask.py](code/AiTask.py)
 
 ## Output
 The script successfully recognized the facial features, drawing a red box around the face, green boxes around the eyes, and a blue box around the smile.
 
-![Face Recognition Output](images/output_image.jpg)
+![Face Recognition Output](images/task%202.png)
