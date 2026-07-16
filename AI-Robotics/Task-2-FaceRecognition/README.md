@@ -6,9 +6,9 @@ The objective is to build a Python script capable of detecting specific facial f
 
 ## Implementation Details
 The model was implemented using OpenCV's pre-trained Haar Cascade Classifiers:
-- `haarcascade_frontalface_default.xml` (Face detection)
-- `haarcascade_eye.xml` (Eye detection)
-- `haarcascade_smile.xml` (Smile detection)
+- [`haarcascade_frontalface_default.xml`](https://github.com/opencv/opencv/blob/4.x/data/haarcascades/haarcascade_frontalface_default.xml) (Face detection)
+- [`haarcascade_eye.xml`](https://github.com/opencv/opencv/blob/4.x/data/haarcascades/haarcascade_eye.xml) (Eye detection)
+- [`haarcascade_smile.xml`](https://github.com/opencv/opencv/blob/4.x/data/haarcascades/haarcascade_smile.xml) (Smile detection)
 
 ## Code
 The script loads the input image, converts it to grayscale for processing, and applies the `detectMultiScale` method to locate the features. It then uses `cv2.rectangle` to draw labeled bounding boxes around the detected areas.
