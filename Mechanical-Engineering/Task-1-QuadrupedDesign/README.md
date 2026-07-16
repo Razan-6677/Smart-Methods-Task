@@ -16,7 +16,7 @@ Each of the robot's four legs is made up of 3 parts, with the following lengths:
 
 The lengths are staggered, not equal, in order to keep a low center of gravity and ensure better stability.
 
-![Leg Links](leg-links.PNG)
+![Leg Links](images/leg-links.PNG)
 
 ## 3) Number of Joints and Degrees of Freedom
 Each leg has 3 joints, and each joint is driven by an independent motor so it has its own degree of freedom:
