@@ -21,14 +21,14 @@ The website is deployed using [InfinityFree](https://infinityfree.com/) hosting.
 
 ## Website Preview
 
-![Website Preview](images/preview.png)
+![Website Preview](images/task2.png)
 
 ## Files
 
-* `code/index.php` — Page structure, form handling, and backend database connection
-* `code/style.css` — Styling, layout, and UI color theme
-* `code/script.js` — Frontend logic and asynchronous requests for the toggle button
-* `code/database.sql` — SQL queries for creating the database table
+* [index.php](code/index.php) — Page structure, form handling, and backend database connection
+* [style.css](code/style.css) — Styling, layout, and UI color theme
+* [script.js](code/script.js) — Frontend logic and asynchronous requests for the toggle button
+* [database.sql](code/database.sql) — SQL queries for creating the database table
 
 ## Tech Used
 
