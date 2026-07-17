@@ -4,7 +4,7 @@
 Create and design a personal website. Attach all files and write a README explaining the work in GitHub.
 
 ## Overview
-A personal portfolio website built with HTML and CSS, showcasing my background, technical skills, robotics/hardware projects, certifications, and contact information.
+A personal portfolio website programmed from scratch using Notepad++ with HTML and CSS. It showcases my background, technical skills, robotics/hardware projects, certifications, and contact information.
 
 ## Live Site
 The website is deployed using [InfinityFree](https://www.infinityfree.com) hosting.
@@ -27,4 +27,4 @@ The website is deployed using [InfinityFree](https://www.infinityfree.com) hosti
 - [style.css](code/style.css) — styling and layout
 
 ## Tech Used
-HTML, CSS
+HTML, CSS, Notepad++
