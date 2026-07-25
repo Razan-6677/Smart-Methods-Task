@@ -48,5 +48,3 @@ The circuit was built and simulated on Wokwi (Arduino Uno → A4988 → NEMA 17)
 ## References
 
 - [NEMA 17 Stepper Motor Datasheet](https://components101.com/motors/nema17-stepper-motor)
-- [Allegro A4988 Microstepping Driver Datasheet](https://www.allegromicro.com/en/products/motor-drivers/brush-dc-motor-drivers/a4988)
-- [Arduino Reference - delayMicroseconds()](https://www.arduino.cc/reference/en/language/functions/time/delaymicroseconds/)
