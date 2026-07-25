@@ -43,7 +43,7 @@ The circuit was built and simulated on Wokwi (Arduino Uno → A4988 → NEMA 17)
 
 ## Files
 
-- [code/sketch.ino](./code/sketch.ino) — Arduino code for the stepper motor motion
+- [code/sketch.ino](code/sketch.ino) — Arduino code for the stepper motor motion
 
 ## References
 
