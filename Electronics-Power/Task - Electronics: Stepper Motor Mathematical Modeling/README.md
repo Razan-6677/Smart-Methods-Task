@@ -39,7 +39,7 @@ The circuit was built and simulated on Wokwi (Arduino Uno → A4988 → NEMA 17)
 
 ## Simulation Preview
 
-![Simulation](./screenshots/preview.png)
+![Simulation](images/task00.png)
 
 ## Files
 
