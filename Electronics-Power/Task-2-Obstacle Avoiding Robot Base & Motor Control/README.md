@@ -27,6 +27,3 @@ The project fulfills the following hardware simulation requirements:
 
 ##  Source Code
 - [code/dc.ino](code/dc.ino) — Arduino source code for the simulation.
-
----
-#Task2 #Arduino #Tinkercad #Robotics #L293D #SmartMethods #DCMotor #Ultrasonic #Servo
