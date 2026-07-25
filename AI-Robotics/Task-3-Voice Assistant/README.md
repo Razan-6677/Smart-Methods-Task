@@ -22,15 +22,19 @@ The website is deployed using [InfinityFree](https://infinityfree.com) hosting.
 
 ## Website Preview
 
-![Website Preview](./screenshots/preview.png)
+![Website Preview](images/task.png)
 
 ## Files
 
-- [index.html](./index.html) — Page structure and chat interface
-- [style.css](./style.css) — Styling, layout, and UI color theme
-- [app.js](./app.js) — Speech recognition, text-to-speech, and communication with the backend
-- [process.php](./process.php) — Backend script that securely calls the Gemini API
-- [config.php](./config.php) — API key configuration
-- [.htaccess](./.htaccess) — Protects config.php from direct browser access
+- [codes/index.html](codes/index.html) — Page structure and chat interface
+- [codes/style.css](codes/style.css) — Styling, layout, and UI color theme
+- [codes/app.js](codes/app.js) — Speech recognition, text-to-speech, and communication with the backend
+- [codes/process.php](codes/process.php) — Backend script that securely calls the Gemini API
+- [codes/config.php](codes/config.php) — API key configuration
+- [codes/.htaccess](codes/.htaccess) — Protects config.php from direct browser access
 
 ## Tech Used
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **API:** Google Gemini API
+- **Hosting:** InfinityFree
