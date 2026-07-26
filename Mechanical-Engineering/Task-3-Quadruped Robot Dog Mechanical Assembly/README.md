@@ -3,7 +3,7 @@
 ## Overview
 This project involves the mechanical assembly of a quadruped robot dog using **Onshape**. The design adheres to the physical constraints of an agile robotic system, focusing on modularity and proper kinematic linkages for locomotion.
 
-## 🛠️ Assembly Algorithm (Step-by-Step)
+## Assembly Algorithm (Step-by-Step)
 
 The robot was assembled using a systematic approach with specific CAD mates to ensure correct degrees of freedom:
 
@@ -21,7 +21,7 @@ The robot was assembled using a systematic approach with specific CAD mates to e
    - Mounted the `rightLeg` and `leftLeg` appendages to the servo arms.
    - Utilized a strategic combination of **Cylindrical**, **Parallel**, and **Planar** mates to lock the necessary axes while maintaining the correct parallel kinematics for the walking gait.
 
-## 📸 Assembly Views
+## Assembly Views
 
 ### 1. Fully Assembled View
 ![Assembled Robot](images/assembled.png)
@@ -29,10 +29,10 @@ The robot was assembled using a systematic approach with specific CAD mates to e
 ### 2. Exploded View (Internal Mechanics)
 ![Exploded View](images/exploded.png)
 
-## 🔗 Project Links & Files
+## Project Links & Files
 - **Onshape 3D Workspace:** [Click here to explore the interactive 3D model](https://cad.onshape.com/documents/134e4062060a8944946765ca/w/2ba4041f3ea56f9c686fb0df/e/f77bc74fd98199bed8a6102e?explodedView=MkYOck1qUJ3MplcvP&renderMode=0&uiState=6a665110d7fb0533922f0821)
 
-### 📁 3D Printable Files (STL)
+### 3D Printable Files (STL)
 The individual part files have been exported and are available in the `files` directory, ready for 3D printing:
 - [BodyV2](files/BodyV2.stl)
 - [BodyCoverV2](files/BodyCoverV2.stl)
