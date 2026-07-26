@@ -45,7 +45,7 @@ void loop() {
     myServo.write(180);  
     delay(800);
     myServo.write(90);   
-    delay(600);
+    delay(800);
 
     moveBackward();
     delay(1000);
