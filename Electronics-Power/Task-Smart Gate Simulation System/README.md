@@ -30,6 +30,3 @@ The simulation follows a strict three-step sequential scenario:
 ## Links & Files
 - **Wokwi Simulation:** [Click here to view and run the simulation](https://wokwi.com/projects/470424347242983425)
 - **Source Code:** [Code/gate.ino](Code/gate.ino)
-
----
-#Arduino #Wokwi #SmartGate #Robotics #ServoMotor #StepperMotor #SmartMethods #Automation
