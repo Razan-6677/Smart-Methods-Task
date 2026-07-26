@@ -3,7 +3,7 @@
 ## Overview
 This project simulates an automated smart entry gate for vehicles. The system integrates three different motor functions, executing a sequential logic to simulate a real-world scenario: scanning a vehicle's license plate, dispensing an entry ticket, and opening the gate barrier. The project is designed and simulated using Wokwi.
 
-> **Hardware Note:** The original task required a DC Motor for the ticket dispenser. Since Wokwi does not feature a standard DC motor component for this specific configuration, a second Stepper Motor was used instead. It was programmed to continuously spin for a set duration to accurately mimic the behavior and speed of a DC motor.
+> ** Note:** The original task required a DC Motor for the ticket dispenser. Since Wokwi does not feature a standard DC motor component for this specific configuration, a second Stepper Motor was used instead. It was programmed to continuously spin for a set duration to accurately mimic the behavior and speed of a DC motor.
 
 ## System Workflow & Motor Functions
 
