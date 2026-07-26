@@ -1,4 +1,4 @@
-# Task 3 - Quadruped Robot Dog Mechanical Assembly 🐕⚙️
+# Task 3 - Quadruped Robot Dog Mechanical Assembly 
 
 ## Overview
 This project involves the mechanical assembly of a quadruped robot dog using **Onshape**. The design adheres to the physical constraints of an agile robotic system, focusing on modularity and proper kinematic linkages for locomotion.
@@ -31,7 +31,11 @@ The robot was assembled using a systematic approach with specific CAD mates to e
 
 ## 🔗 Project Links & Files
 - **Onshape 3D Workspace:** [Click here to explore the interactive 3D model](https://cad.onshape.com/documents/134e4062060a8944946765ca/w/2ba4041f3ea56f9c686fb0df/e/f77bc74fd98199bed8a6102e?explodedView=MkYOck1qUJ3MplcvP&renderMode=0&uiState=6a665110d7fb0533922f0821)
-- **3D Printable Files (STL):** The individual part files (`BodyV2`, `BodyCoverV2`, `rightLeg`, `leftLeg`, and `microservoArm`) have been exported and are available in the `3D_Parts` folder, ready for 3D printing.
 
----
-#Onshape #CAD #Robotics #Quadruped #MechanicalDesign #SmartMethods #Servo
+### 📁 3D Printable Files (STL)
+The individual part files have been exported and are available in the `files` directory, ready for 3D printing:
+- [BodyV2](files/BodyV2.stl)
+- [BodyCoverV2](files/BodyCoverV2.stl)
+- [Right Leg](files/rightLeg%20-%20Default.stl)
+- [Left Leg](files/leftLeg%20-%20Default.stl)
+- [Micro Servo Arm](files/microservoArm%20-%20A3.stl)
