@@ -1,4 +1,4 @@
-# Task-Smart Gate Simulation System
+# Task - Smart Gate Simulation System
 
 ## Overview
 This project simulates an automated smart entry gate for vehicles. The system integrates three different motor functions, executing a sequential logic to simulate a real-world scenario: scanning a vehicle's license plate, dispensing an entry ticket, and opening the gate barrier. The project is designed and simulated using Wokwi.
@@ -23,13 +23,13 @@ The simulation follows a strict three-step sequential scenario:
 
 ## Simulation Circuit
 
-![Smart Gate Simulation](images/gate.png)
+![Smart Gate Simulation](Images/IMG_4965.jpeg)
 
 *Figure: The Wokwi simulation circuit featuring an Arduino Uno, two Stepper Motors with A4988 drivers (representing the camera and ticket dispenser), a Micro Servo Motor (representing the gate barrier), and an LED indicator.*
 
 ## Links & Files
 - **Wokwi Simulation:** [Click here to view and run the simulation](https://wokwi.com/projects/470424347242983425)
-- **Source Code:** [code/gate.ino](code/gate.ino)
+- **Source Code:** [Code/gate.ino](Code/gate.ino)
 
 ---
 #Arduino #Wokwi #SmartGate #Robotics #ServoMotor #StepperMotor #SmartMethods #Automation
