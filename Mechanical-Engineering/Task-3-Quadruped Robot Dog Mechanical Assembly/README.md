@@ -29,8 +29,10 @@ The robot was assembled using a systematic approach with specific CAD mates to e
 ### 2. Exploded View (Internal Mechanics)
 ![Exploded View](images/exploded.png)
 
-## Project Links & Files
-- **Onshape 3D Workspace:** [Click here to explore the interactive 3D model](https://cad.onshape.com/documents/134e4062060a8944946765ca/w/2ba4041f3ea56f9c686fb0df/e/f77bc74fd98199bed8a6102e)
+## 🔗 Project Links & Files
+- **Onshape 3D Workspace:** [Click here to explore the interactive 3D model](https://cad.onshape.com/documents/134e4062060a8944946765ca/w/2ba4041f3ea56f9c686fb0df/e/f77bc74fd98199bed8a6102e?renderMode=0&uiState=6a6658cbd7fb0533922f0ff6)
+  
+  > **Note:** If you get a "403 Forbidden" error, just copy the link and paste it into a new tab. Onshape sometimes blocks direct clicks from GitHub.
 
 ### 3D Printable Files (STL)
 The individual part files have been exported and are available in the `files` directory, ready for 3D printing:
