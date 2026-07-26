@@ -1,24 +1,18 @@
-// ============================================================
-// app.js — منطق الشات بوت الصوتي (يعمل في المتصفح)
-// ============================================================
 
 const micBtn = document.getElementById("micBtn");
 const micIcon = document.getElementById("micIcon");
 const chatLog = document.getElementById("chatLog");
 const statusText = document.getElementById("statusText");
 
-// عنوان الخادم الخلفي الذي يستدعي Gemini بأمان (انظر process.php)
-// مسار نسبي حتى يعمل تلقائيًا مهما كان اسم النطاق على InfinityFree
+
 const BACKEND_URL = "process.php";
 
-// اللغة المستخدمة للتعرف على الصوت وللنطق
+
 const LANG = "ar-SA";
 
 let isListening = false;
 
-// --------------------------------------------------------
-// 1) إعداد التعرف على الصوت (Speech-to-Text)
-// --------------------------------------------------------
+
 const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 if (!SpeechRecognitionAPI) {
@@ -82,10 +76,7 @@ if (!SpeechRecognitionAPI) {
   };
 }
 
-// --------------------------------------------------------
-// 2) الاتصال بالخادم الخلفي الذي يستدعي Gemini
-//    (لا نستدعي Gemini مباشرة من المتصفح لحماية مفتاح الـ API)
-// --------------------------------------------------------
+
 async function askGemini(prompt) {
   const res = await fetch(BACKEND_URL, {
     method: "POST",
@@ -102,14 +93,11 @@ async function askGemini(prompt) {
   return data.reply || "لم يصل رد من الخادم.";
 }
 
-// --------------------------------------------------------
-// 3) تحويل النص إلى كلام (Text-to-Speech)
-// --------------------------------------------------------
+
 function speak(text) {
   if (!("speechSynthesis" in window)) return;
 
-  window.speechSynthesis.cancel(); // إيقاف أي نطق سابق
-  // ننطق نص "نظيف" بدون رموز Markdown حتى لا يقرأها الصوت حرفيًا
+  window.speechSynthesis.cancel();
   const cleanText = stripMarkdown(text);
   const utterance = new SpeechSynthesisUtterance(cleanText);
   utterance.lang = LANG;
@@ -117,9 +105,7 @@ function speak(text) {
   window.speechSynthesis.speak(utterance);
 }
 
-// --------------------------------------------------------
-// 4) تحويل Markdown البسيط (من Gemini) إلى HTML آمن
-// --------------------------------------------------------
+
 function escapeHtml(str) {
   return str
     .replace(/&/g, "&amp;")
@@ -130,27 +116,27 @@ function escapeHtml(str) {
 function formatBotText(rawText) {
   let text = escapeHtml(rawText);
 
-  // عناوين ### أو ## أو #
+
   text = text.replace(/^### (.*)$/gm, "<h4>$1</h4>");
   text = text.replace(/^## (.*)$/gm, "<h3>$1</h3>");
   text = text.replace(/^# (.*)$/gm, "<h2>$1</h2>");
 
-  // خط عريض **نص**
+
   text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 
-  // عناصر قائمة تبدأ بـ * أو -
+
   text = text.replace(/^[*-] (.*)$/gm, "• $1");
 
-  // خطوط فاصلة --- أو ***
+
   text = text.replace(/^(---|\*\*\*)$/gm, "");
 
-  // الأسطر الجديدة إلى <br>
+
   text = text.replace(/\n/g, "<br>");
 
   return text;
 }
 
-// نسخة نظيفة من النص بدون أي رموز Markdown (تُستخدم للنطق الصوتي)
+
 function stripMarkdown(rawText) {
   return rawText
     .replace(/^#{1,6}\s?/gm, "")
@@ -160,16 +146,14 @@ function stripMarkdown(rawText) {
     .trim();
 }
 
-// --------------------------------------------------------
-// أدوات مساعدة لواجهة الدردشة
-// --------------------------------------------------------
+
 function addMessage(role, text, opts = {}) {
   const el = document.createElement("div");
   el.className = `message ${role}${opts.thinking ? " thinking" : ""}`;
   const p = document.createElement("p");
 
   if (role === "bot" && !opts.thinking) {
-    // نسمح بتنسيق HTML بسيط وآمن لردود البوت فقط
+
     p.innerHTML = formatBotText(text);
   } else {
     p.textContent = text;
