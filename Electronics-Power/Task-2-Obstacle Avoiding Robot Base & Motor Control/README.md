@@ -22,7 +22,7 @@ The project fulfills the following hardware simulation requirements:
 *Figure: Circuit schematic on Tinkercad illustrating the Arduino Uno wired to a breadboard containing the L293D motor driver chip, 4 DC motors (representing the robot wheels), HC-SR04 ultrasonic sensor for distance measurement, and a micro servo motor.*
 
 ## 🔗 Links & Demo
-- **Tinkercad Simulation:** [View & Run Simulation](Https://www.tinkercad.com/things/aD3prAP6Mub-dc-motor-with-l293d-and-servo)
+- **Tinkercad Simulation:** [View & Run Simulation](https://www.tinkercad.com/things/aD3prAP6Mub-dc-motor-with-l293d-and-servo?sharecode=lcFXniSSaft5LoFMvhzG1qPWWAw382tO0K48bYzoQ9s)
 - **Video Demonstration:** [Watch Video on Google Drive](https://drive.google.com/file/d/1zpPnBimd5p-BS4CxBiaPUMnfFZiyoHuF/view?usp=drivesdk)
 
 ##  Source Code
