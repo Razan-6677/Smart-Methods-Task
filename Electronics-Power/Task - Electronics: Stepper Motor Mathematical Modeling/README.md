@@ -6,13 +6,10 @@ This task is about understanding how a stepper motor (NEMA 17) works internally 
 
 ## Part 1: Research
 
-A NEMA 17 stepper motor has a step angle of 1.8°, which means one full rotation (360°) needs:
-
-360 / 1.8 = 200 steps
-
-**Full-Step vs Half-Step:** In Full-Step mode, one pulse moves the motor a full 1.8°. In Half-Step mode, the driver switches between energizing one coil and both coils together, so each step becomes half the angle (0.9°). This gives smoother motion and better precision, but it needs double the pulses to cover the same angle.
-
-**Microstepping:** Drivers like the A4988 don't just switch coils on/off, they control the current gradually, which splits every full step into smaller microsteps. Setting Microstep to 1/8 divides each 1.8° step into 8 parts (0.225° per microstep), so a full revolution now needs 1600 steps instead of 200. The motion becomes much smoother but requires a higher pulse rate to keep the same speed.
+- A NEMA 17 stepper motor has a step angle of 1.8°, which means one full rotation (360°) needs:
+  360 / 1.8 = 200 steps
+- **Full-Step vs Half-Step:** In Full-Step mode, one pulse moves the motor a full 1.8°. In Half-Step mode, the driver switches between energizing one coil and both coils together, so each step becomes half the angle (0.9°). This gives smoother motion and better precision, but it needs double the pulses to cover the same angle.
+- **Microstepping:** Drivers like the A4988 don't just switch coils on/off, they control the current gradually, which splits every full step into smaller microsteps. Setting Microstep to 1/8 divides each 1.8° step into 8 parts (0.225° per microstep), so a full revolution now needs 1600 steps instead of 200. The motion becomes much smoother but requires a higher pulse rate to keep the same speed.
 
 ## Part 2: Calculations
 
@@ -31,9 +28,8 @@ The same logic was applied to the return motion (1080° in 4 seconds), giving 60
 
 ## Part 3: Simulation
 
-Since `delayMicroseconds()` in Arduino doesn't accept decimal values, the timing had to be converted from seconds to microseconds (multiplying by 1,000,000) before dividing it over the number of steps. This way the code doesn't use fixed numbers, it calculates the steps and delay directly from the angle and duration, so it stays connected to the math in Part 2.
-
-The circuit was built and simulated on Wokwi (Arduino Uno → A4988 → NEMA 17). Since Wokwi doesn't have an official separate power source part for VMOT, it was connected to 5V, which is enough to prove the logic (step count and timing) works correctly.
+- Since `delayMicroseconds()` in Arduino doesn't accept decimal values, the timing had to be converted from seconds to microseconds (multiplying by 1,000,000) before dividing it over the number of steps. This way the code doesn't use fixed numbers, it calculates the steps and delay directly from the angle and duration, so it stays connected to the math in Part 2.
+- The circuit was built and simulated on Wokwi (Arduino Uno → A4988 → NEMA 17). Since Wokwi doesn't have an official separate power source part for VMOT, it was connected to 5V, which is enough to prove the logic (step count and timing) works correctly.
 
 🔗 [Wokwi Simulation](https://wokwi.com/projects/470441622798031873)
 
