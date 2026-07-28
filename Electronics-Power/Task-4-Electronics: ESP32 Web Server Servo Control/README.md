@@ -2,38 +2,27 @@
 
 ## Overview
 
-This task demonstrates how to control a Servo motor and LED indicators via a web interface hosted on an ESP32 configured as a WiFi Access Point (AP).
+This project demonstrates how to control a **Servo Motor** and LED indicators via a web interface hosted on an **ESP32** configured as a WiFi Access Point (AP). The circuit was initially designed in **Wokwi** and subsequently built and tested on physical hardware.
 
-## Part 1: Implementation Approach
+## Task Requirements & Logic
 
-**Hybrid Approach:** The circuit design and connections were initially modeled using the Wokwi simulation platform. However, because simulating ESP32 WiFi gateway features requires a premium subscription on the platform, the fully functional project was directly built and tested on real physical hardware.
+1. **Access Point Setup:** The ESP32 broadcasts a local WiFi network named "Razan".
+2. **Web Interface:** Upon connecting to the network and accessing the assigned IP address, an HTML web page with "Open" and "Close" buttons is served.
+3. **Open Command:** Clicking "Open" triggers the ESP32 to rotate the Servo motor to 90 degrees, turn the Green LED ON, and turn the Red LED OFF.
+4. **Close Command:** Clicking "Close" commands the ESP32 to return the Servo motor to 0 degrees, turn the Red LED ON, and turn the Green LED OFF.
 
-## Part 2: Hardware Setup
+## Simulation Circuit
 
-**Components Used:** ESP32, Servo Motor, Red LED, Green LED, Resistors, and a Breadboard.
+![Wokwi Simulation](images/wokwi.png)
+*The circuit includes an ESP32, a micro servo motor, a red LED, and a green LED with current-limiting resistors connected via a breadboard, modeled in Wokwi.*
 
-**System States:**
-**Open State:** The Servo rotates to 90 degrees, the Green LED turns ON, and the Red LED turns OFF.
-**Closed State:** The Servo returns to 0 degrees, the Red LED turns ON, and the Green LED turns OFF.
+## Hardware Implementation
 
-## Part 3: Web Server Configuration
-
-**Access Point:** The ESP32 is programmed to broadcast a local WiFi network named "Razan".
-
-**Web Interface:** Connecting to this network and navigating to the assigned IP address loads an HTML web page with "Open" and "Close" buttons. Pressing these buttons sends HTTP GET requests (`/open` or `/close`) to trigger the hardware states in real-time.
-
-## Part 4: Project Media & Code
-
-**Wokwi Simulation Circuit:**
-![Wokwi Circuit](images/wokwi.png)
-
-**Physical Hardware Setup:**
 ![Hardware Setup](images/hardware.png)
+*The fully functional physical hardware setup executing the web server commands in real-time.*
 
-**Web Interface Preview:**
-![Web Interface](images/website.png)
+## Source Code & Links
 
-**Project Links:**
-**Wokwi Workspace:** [View Simulation Here](https://wokwi.com/projects/470800101176411137)
-**Hardware Demo Video:** [Watch the real-time execution on Google Drive](https://drive.google.com/file/d/1Evf2Yl7YHZ7fM2jvi9NBHdcA3gj6q094/view?usp=drivesdk)
-**Source Code:** [Code/server.ino](Code/server.ino)
+- **Wokwi Simulation:** [Click here to view simulation](https://wokwi.com/projects/470800101176411137)
+- **Hardware Demo Video:** [Watch the real-time execution here](https://drive.google.com/file/d/1Evf2Yl7YHZ7fM2jvi9NBHdcA3gj6q094/view?usp=drivesdk)
+- **Source Code:** [Code/server.ino](Code/server.ino)
