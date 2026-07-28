@@ -11,10 +11,19 @@ This project demonstrates how to control a **Servo Motor** and LED indicators vi
 3. **Open Command:** Clicking "Open" triggers the ESP32 to rotate the Servo motor to 90 degrees, turn the Green LED ON, and turn the Red LED OFF.
 4. **Close Command:** Clicking "Close" commands the ESP32 to return the Servo motor to 0 degrees, turn the Red LED ON, and turn the Green LED OFF.
 
+## Wiring Configuration
+
+- **Servo Motor:** The signal wire is connected to **GPIO 23**.
+- **Red LED:** The positive leg (Anode) is connected to **GPIO 18**.
+- **Green LED:** The positive leg (Anode) is connected to **GPIO 19**.
+- **Power & Ground:** All components share a common Ground (GND), and the LEDs are connected through current-limiting resistors.
+
 ## Simulation Circuit
 
 ![Wokwi Simulation](images/wokwi.png)
 *The circuit includes an ESP32, a micro servo motor, a red LED, and a green LED with current-limiting resistors connected via a breadboard, modeled in Wokwi.*
+
+**Note on Wokwi Limitations:** While the circuit layout is designed in Wokwi, simulating the ESP32 WiFi Access Point and Web Server requires a premium subscription on the platform to access WiFi gateway features. Consequently, the actual web interface execution was performed directly on the physical hardware.
 
 ## Hardware Implementation
 
