@@ -23,8 +23,7 @@ This project demonstrates how to control a **Servo Motor** and LED indicators vi
 ![Wokwi Simulation](images/wokwi.png)
 *The circuit includes an ESP32, a micro servo motor, a red LED, and a green LED with current-limiting resistors connected via a breadboard, modeled in Wokwi.*
 
-> [NOTE]
-> While the circuit layout is designed in Wokwi, simulating the ESP32 WiFi Access Point and Web Server requires a premium subscription on the platform to access WiFi gateway features. Consequently, the actual web interface execution was performed directly on the physical hardware.
+> [NOTE] During simulation in Wokwi, the ESP32’s WiFi Access Point and web server did not respond reliably (the assigned IP did not load in the browser). For this reason, the project was verified and demonstrated directly on physical hardware, where the Access Point, web interface, and servo/LED control all functioned correctly.
 
 ## Hardware Implementation
 
