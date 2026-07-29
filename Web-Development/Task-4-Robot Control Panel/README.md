@@ -33,9 +33,9 @@ The project utilizes a PHP backend architecture to handle the data flow between 
 
 - **Live Website:** [Click here to view and test the live project](https://task4.kesug.com/index.html)
 - **Source Code Files:**
-  - `index.html`
-  - `monitor.html`
-  - `db.php`
-  - `update_command.php`
-  - `get_state.php`
-  - `setup.sql`
+  - [index.html](Codes/index.html)
+  - [monitor.html](Codes/monitor.html)
+  - [db.php](Codes/db.php)
+  - [update_command.php](Codes/update_command.php)
+  - [get_state.php](Codes/get_state.php)
+  - [setup.sql](Codes/setup.sql)
