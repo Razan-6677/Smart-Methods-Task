@@ -17,7 +17,7 @@ This repository contains the 3D design of a quadruped robot for the Smart Method
 * The robotic arm/leg mechanism incorporated in this design is based on the open-source **[SO-ARM100 project](https://github.com/TheRobotStudio/SO-ARM100)** by TheRobotStudio, utilized and modified under the Apache 2.0 License.
 
 ## Design Views
-![Design View 1](Mechanical-Engineering/Dog-Robot-3D/images/robot1.png)
+![Design View 1]([Mechanical-Engineering/Dog-Robot-3D/images/robot1.png](https://github.com/Razan-6677/Smart-Methods-Task/blob/main/Mechanical-Engineering/Dog-Robot-3D/images/robot1.png))
 ![Design View 2](Mechanical-Engineering/Dog-Robot-3D/images/robot2.png)
 
 ## Included Files
