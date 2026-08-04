@@ -25,10 +25,10 @@ The Arduino is programmed with three specific custom functions to demonstrate th
 ## Part 3: Project Media & Demonstration
 
 **Hardware Wiring Setup:**
-![Wiring Setup](Mechanical-Engineering/Task-4-Robotics:%20Quadruped%20Robot%203-Different%20Motions/images/robot1.PNG)
+![Wiring Setup](Mechanical-Engineering/Task-4-Robotics%3A%20Quadruped%20Robot%203-Different%20Motions/images/robot1.PNG)
 
 **Robot Assembly:**
-![Quadruped Robot](Mechanical-Engineering/Task-4-Robotics:%20Quadruped%20Robot%203-Different%20Motions/images/robot2.PNG)
+![Quadruped Robot](Mechanical-Engineering/Task-4-Robotics%3A%20Quadruped%20Robot%203-Different%20Motions/images/robot2.PNG)
 
 **Demo Video:**
 - **Watch Robot Motions:** [Click here to view the demonstration video on Google Drive](https://drive.google.com/file/d/1ICXY7mnW7B15XBbFcnFb1aOAXl7vm7C9/view?usp=drivesdk)
@@ -37,4 +37,4 @@ The Arduino is programmed with three specific custom functions to demonstrate th
 
 The complete Arduino source code for the robot's motions is provided in a separate file within this repository.
 
-- **Source Code File:** [Code/robot_motions.ino](Code/robot_motions.ino)
+- **Source Code File:** [Code/robot_motions.ino](Mechanical-Engineering/Task-4-Robotics%3A%20Quadruped%20Robot%203-Different%20Motions/Code/robot_motions.ino)
