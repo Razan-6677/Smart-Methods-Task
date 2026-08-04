@@ -25,6 +25,13 @@ Imagine this robot living permanently inside a chemical factory or storage facil
 
 In short: the robot is always on guard, catches danger the moment it starts, takes simple first-response actions to slow it down, and calls humans in before things get worse — all without ever putting a person in harm's way first.
 
+### Why This Matters
+Workplace chemical exposure is a real and ongoing global problem, not a rare edge case:
+* The World Health Organization estimates that hazardous chemical exposure in occupational settings causes **over 370,000 premature deaths every year worldwide**.
+* In the United States alone, OSHA reports **more than 50,000 deaths annually** linked to workplace chemical exposure, with a serious industrial chemical accident occurring roughly **every two and a half days**.
+
+A robot that can detect a leak the instant it happens and take basic first-response action before any human enters the danger zone directly targets the exact gap behind these numbers: the delay and direct exposure that happens *before* trained responders arrive.
+
 ## Credits & Attribution
 * The robotic arm/leg mechanism incorporated in this design is based on the open-source **[SO-ARM100 project](https://github.com/TheRobotStudio/SO-ARM100)** by TheRobotStudio, utilized and modified under the Apache 2.0 License.
 
@@ -44,3 +51,8 @@ Interactive design workspace:
 
 > [!NOTE]
 > If you get a "403 Forbidden" error, just copy the link and paste it into a new tab. Onshape sometimes blocks direct clicks from GitHub.
+
+## References
+* World Health Organization (WHO) — occupational hazardous chemical exposure mortality estimates.
+* U.S. Occupational Safety and Health Administration (OSHA) — *Transitioning to Safer Chemicals: A Toolkit for Employers and Workers*, osha.gov/safer-chemicals.
+* BlueGreen Alliance — Chemical Safety, bluegreenalliance.org/work-issue/chemical-safety.
