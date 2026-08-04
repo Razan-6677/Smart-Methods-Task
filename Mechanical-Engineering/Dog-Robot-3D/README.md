@@ -33,7 +33,7 @@ Workplace chemical exposure is a real and ongoing global problem, not a rare edg
 A robot that can detect a leak the instant it happens and take basic first-response action before any human enters the danger zone directly targets the exact gap behind these numbers: the delay and direct exposure that happens *before* trained responders arrive.
 
 ## Credits & Attribution
-* The robotic arm/leg mechanism incorporated in this design is based on the open-source **[SO-ARM100 project](https://github.com/TheRobotStudio/SO-ARM100)** by TheRobotStudio, utilized and modified under the Apache 2.0 License.
+* The robotic **arm** mechanism used in this design is based on the open-source **[SO-ARM100 project](https://github.com/TheRobotStudio/SO-ARM100)** by TheRobotStudio, utilized under the Apache 2.0 License. Only the base mount was modified to fit and integrate with the robot. The rest of the robot — body, chassis, and all four legs — was designed entirely from scratch.
 
 ## Design Views
 ![Design View 1](images/images1.png)
