@@ -17,10 +17,10 @@ The Arduino is programmed with three specific custom functions to demonstrate th
 **Components Used:** Arduino UNO, Breadboard, jumper wires, four servo motors, and the 3D-printed quadruped structure.
 
 **Pin Connections:**
-- **Leg 1 Servo:** Connected to Arduino Digital Pin **3**
-- **Leg 2 Servo:** Connected to Arduino Digital Pin **4**
-- **Leg 3 Servo:** Connected to Arduino Digital Pin **6**
-- **Leg 4 Servo:** Connected to Arduino Digital Pin **7**
+- **Leg 1 Servo:** Connected to Pin **3**
+- **Leg 2 Servo:** Connected to Pin **4**
+- **Leg 3 Servo:** Connected to Pin **6**
+- **Leg 4 Servo:** Connected to Pin **7**
 
 ## Part 3: Project Media & Demonstration
 
