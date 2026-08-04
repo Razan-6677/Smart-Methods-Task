@@ -31,7 +31,7 @@ The Arduino is programmed with three specific custom functions to demonstrate th
 ![Quadruped Robot](images/robot2.PNG)
 
 **Demo Video:**
-- **Watch Robot Motions:** [Click here to view the demonstration video on Google Drive](https://drive.google.com/file/d/1ICXY7mnW7B15XBbFcnFb1aOAXl7vm7C9/view?usp=drivesdk)
+- **Watch Robot Motions:** [Click here to view Google Drive](https://drive.google.com/file/d/1ICXY7mnW7B15XBbFcnFb1aOAXl7vm7C9/view?usp=drivesdk)
 
 ## Part 4: Source Code
 
