@@ -1,0 +1,28 @@
+# Task - Electronics: LED Circuit to PCB Design
+
+## Overview
+
+This task involves designing a Printed Circuit Board (PCB) for a simple LED circuit. The objective is to translate a basic theoretical circuit diagram into a fully routed, production-ready PCB layout using EasyEDA software.
+
+## Part 1: Circuit Schematic
+
+The first step was to design the electronic schematic. The circuit is powered by a 3V coin cell battery and includes a current-limiting resistor to protect the LED.
+
+**Components Used:**
+- CR2032 Battery Cell (3V Power Source)
+- 220Ω Resistor (Current Limiter)
+- LED
+
+![Circuit Schematic](images/task4.png)
+
+## Part 2: PCB Layout & Routing
+
+After verifying the schematic, the components were converted into physical footprints. The components were arranged logically on the board to minimize trace length, and the routing was completed to connect the power source, resistor, and LED.
+
+![PCB Layout](images/taskPCB4.png)
+
+## Part 3: 3D Visualization
+
+Once the routing was finalized, a 3D model of the PCB was generated to inspect the physical placement of the components and ensure the board's dimensions and design are ready for manufacturing.
+
+![3D PCB View](images/task43d.png)
