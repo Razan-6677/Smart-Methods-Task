@@ -1,4 +1,4 @@
-# Quadruped Robot Dog - 3D Parametric Design 🐕🦾
+# Quadruped Robot Dog - 3D Parametric Design
 
 ## About the Project
 This repository contains the 3D design of a quadruped robot for the Smart Methods summer training tasks. This robot was entirely designed and modified using Parametric CAD methodology to meet the engineering requirements for the robot's locomotion.
@@ -35,7 +35,7 @@ In short: the robot is always on guard, catches danger the moment it starts, tak
 ## Included Files
 In accordance with the task requirements, all design parts have been exported in `STL` format, ready for 3D printing.
 
-🔗 **[Download STL Files](files/Assembly1.zip)**
+🔗 **[Download STL Files](Files/Assembly%201%20(2).zip)**
 
 ## CAD Workspace
 Interactive design workspace:
