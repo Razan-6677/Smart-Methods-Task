@@ -1,4 +1,4 @@
-# Quadruped Robot Dog - 3D Parametric Design
+# Quadruped Robot Dog - 3D Parametric Design 🐕🦾
 
 ## About the Project
 This repository contains the 3D design of a quadruped robot for the Smart Methods summer training tasks. This robot was entirely designed and modified using Parametric CAD methodology to meet the engineering requirements for the robot's locomotion.
@@ -29,13 +29,13 @@ In short: the robot is always on guard, catches danger the moment it starts, tak
 * The robotic arm/leg mechanism incorporated in this design is based on the open-source **[SO-ARM100 project](https://github.com/TheRobotStudio/SO-ARM100)** by TheRobotStudio, utilized and modified under the Apache 2.0 License.
 
 ## Design Views
-![Design View 1](Mechanical-Engineering/Dog-Robot-3D/images/images1.png)
-![Design View 2](Mechanical-Engineering/Dog-Robot-3D/images/images2.png)
+![Design View 1](images/images1.png)
+![Design View 2](images/images2.png)
 
 ## Included Files
 In accordance with the task requirements, all design parts have been exported in `STL` format, ready for 3D printing.
 
-🔗 **[Download STL Files](Mechanical-Engineering/Dog-Robot-3D/files/Assembly1.zip)**
+🔗 **[Download STL Files](files/Assembly1.zip)**
 
 ## CAD Workspace
 Interactive design workspace:
