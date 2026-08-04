@@ -25,13 +25,13 @@ The Arduino is programmed with three specific custom functions to demonstrate th
 ## Part 3: Project Media & Demonstration
 
 **Hardware Wiring Setup:**
-![Wiring Setup](images/wiring.png)
+![Wiring Setup](Mechanical-Engineering/Task-4-Robotics:%20Quadruped%20Robot%203-Different%20Motions/images/robot1.PNG)
 
 **Robot Assembly:**
-![Quadruped Robot](images/robot.png)
+![Quadruped Robot](Mechanical-Engineering/Task-4-Robotics:%20Quadruped%20Robot%203-Different%20Motions/images/robot2.PNG)
 
 **Demo Video:**
-- **Watch Robot Motions:** [Click here to view the demonstration video on Google Drive](#) *(Replace the hash with your Google Drive video link)*
+- **Watch Robot Motions:** [Click here to view the demonstration video on Google Drive](https://drive.google.com/file/d/1ICXY7mnW7B15XBbFcnFb1aOAXl7vm7C9/view?usp=drivesdk)
 
 ## Part 4: Source Code
 
