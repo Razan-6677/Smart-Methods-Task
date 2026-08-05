@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot Control</title>
+<style>
+  :root {
+    --bg: #F7F8F6;
+    --card: #FFFFFF;
+    --ink: #1C1F26;
+    --muted: #7A8087;
+    --line: #E3E6E2;
+    --accent: #0F6E5C;
+    --accent-soft: #E6F2EF;
+    --stop: #C4432B;
+    --stop-soft: #FBEAE5;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 28px 28px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    padding: 24px;
+  }
+
+  .panel {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 36px 40px 28px;
+    box-shadow: 0 1px 2px rgba(28,31,38,0.04), 0 8px 24px rgba(28,31,38,0.06);
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .eyebrow-left { display: flex; align-items: center; gap: 8px; }
+
+  .eyebrow a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+  }
+  .eyebrow a:hover { text-decoration: underline; }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  .dot.live {
+    background: var(--stop);
+    box-shadow: 0 0 0 3px var(--stop-soft);
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 2px 0 24px;
+    letter-spacing: -0.01em;
+  }
+
+  .pad {
+    display: grid;
+    grid-template-columns: 76px 76px 76px;
+    grid-template-rows: 64px 64px 64px;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    border: 1.5px solid var(--line);
+    border-radius: 14px;
+    background: #FCFCFB;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: 0.15s ease;
+  }
+
+  .btn:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .btn:active { transform: scale(0.96); }
+  .btn svg { width: 16px; height: 16px; }
+
+  .forward  { grid-column: 2; grid-row: 1; }
+  .left     { grid-column: 1; grid-row: 2; }
+  .stop     { grid-column: 2; grid-row: 2; }
+  .right    { grid-column: 3; grid-row: 2; }
+  .backward { grid-column: 2; grid-row: 3; }
+
+  .stop {
+    border-color: var(--stop);
+    color: var(--stop);
+    background: var(--stop-soft);
+  }
+  .stop:hover { background: var(--stop); color: #fff; }
+
+  .voice-row { display: flex; justify-content: center; margin-top: 22px; }
+
+  .mic-btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    border: 1.5px solid var(--line);
+    background: #FCFCFB;
+    color: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.15s ease;
+  }
+
+  .mic-btn svg { width: 18px; height: 18px; }
+  .mic-btn:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .mic-btn.listening { background: var(--stop-soft); border-color: var(--stop); color: var(--stop); }
+  .mic-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .led-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .led-btn {
+    flex: 1;
+    height: 44px;
+    border-radius: 12px;
+    border: 1.5px solid var(--line);
+    background: #FCFCFB;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease;
+  }
+  
+  .led-btn:active { transform: scale(0.96); }
+  .led-on:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .led-off:hover { background: var(--stop-soft); border-color: var(--stop); color: var(--stop); }
+
+  #status {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--line);
+    font-family: 'Consolas', 'SF Mono', monospace;
+    font-size: 12.5px;
+    color: var(--muted);
+    text-align: center;
+    min-height: 18px;
+  }
+
+  #status.ok { color: var(--accent); }
+  #status.err { color: var(--stop); }
+
+  #heard {
+    margin-top: 6px;
+    font-size: 11.5px;
+    color: var(--muted);
+    text-align: center;
+    min-height: 14px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+  <div class="panel">
+    <div class="eyebrow">
+      <div class="eyebrow-left"><span class="dot" id="statusDot"></span>ROBOT CONTROL</div>
+      <a href="monitor.html" target="_blank">Monitor →</a>
+    </div>
+    <h1>Command Pad</h1>
+
+    <div class="pad">
+      <button class="btn forward" onclick="sendCommand('forward')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </button>
+      <button class="btn left" onclick="sendCommand('left')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="btn stop" onclick="sendCommand('stop')">STOP</button>
+      <button class="btn right" onclick="sendCommand('right')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn backward" onclick="sendCommand('backward')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </button>
+    </div>
+
+    <div class="voice-row">
+      <button class="mic-btn" id="micBtn" onclick="toggleListening()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 15a3 3 0 003-3V6a3 3 0 10-6 0v6a3 3 0 003 3z"/>
+          <path d="M19 11a7 7 0 01-14 0M12 18v3"/>
+        </svg>
+        <span id="micLabel">Speak a command</span>
+      </button>
+    </div>
+
+    <div class="led-row">
+      <a href="http://task4.kesug.com/led.php?state=1" target="_blank" class="led-btn led-on">Turn ON LED</a>
+      <a href="http://task4.kesug.com/led.php?state=0" target="_blank" class="led-btn led-off">Turn OFF LED</a>
+    </div>
+
+    <div id="status">Ready</div>
+    <div id="heard"></div>
+  </div>
+
+  <script>
+    function sendCommand(cmd) {
+      const status = document.getElementById('status');
+      status.className = '';
+      status.innerText = 'Sending...';
+
+      fetch('update_command.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'command=' + encodeURIComponent(cmd)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === 'success') {
+          status.className = 'ok';
+          status.innerText = data.button + ' -> "' + data.stored_as + '"  ·  saved to database';
+        } else {
+          status.className = 'err';
+          status.innerText = 'Error: ' + data.message;
+        }
+      })
+      .catch(() => {
+        status.className = 'err';
+        status.innerText = 'Could not reach server';
+      });
+
+      fetch('dir.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'command=' + encodeURIComponent(cmd)
+      });
+    }
+
+    const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const micBtn = document.getElementById('micBtn');
+    const micLabel = document.getElementById('micLabel');
+    const statusDot = document.getElementById('statusDot');
+    const heardEl = document.getElementById('heard');
+    let recognition = null;
+    let listening = false;
+
+    const wordMap = [
+      { cmd: 'forward',  words: ['forward', 'go forward', 'move forward', 'ahead'] },
+      { cmd: 'backward', words: ['backward', 'back', 'go back', 'move back', 'reverse'] },
+      { cmd: 'left',     words: ['left', 'turn left', 'go left'] },
+      { cmd: 'right',    words: ['right', 'turn right', 'go right'] },
+      { cmd: 'stop',     words: ['stop', 'halt', 'freeze'] }
+    ];
+
+    function matchCommand(transcript) {
+      const t = transcript.toLowerCase().trim();
+      for (const entry of wordMap) {
+        for (const w of entry.words) {
+          if (t.includes(w)) return entry.cmd;
+        }
+      }
+      return null;
+    }
+
+    if (SpeechRecognitionAPI) {
+      recognition = new SpeechRecognitionAPI();
+      recognition.lang = 'en-US'; 
+      recognition.continuous = false;
+      recognition.interimResults = false;
+
+      recognition.onstart = () => {
+        listening = true;
+        micBtn.classList.add('listening');
+        micLabel.innerText = 'Listening...';
+        statusDot.classList.add('live');
+        heardEl.innerText = '';
+        document.getElementById('status').className = '';
+        document.getElementById('status').innerText = 'Listening...';
+      };
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        heardEl.innerText = 'Heard: "' + transcript + '"';
+        const cmd = matchCommand(transcript);
+        if (cmd) {
+          sendCommand(cmd);
+        } else {
+          document.getElementById('status').className = 'err';
+          document.getElementById('status').innerText = 'Did not recognize a command';
+        }
+      };
+
+      recognition.onspeechend = () => recognition.stop();
+
+      recognition.onerror = (event) => {
+        document.getElementById('status').className = 'err';
+        if (event.error === 'no-speech') {
+          document.getElementById('status').innerText = 'No speech detected, try again';
+        } else if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
+          document.getElementById('status').innerText = 'Microphone permission blocked';
+        } else if (event.error === 'network') {
+          document.getElementById('status').innerText = 'Network error (needs internet)';
+        } else {
+          document.getElementById('status').innerText = 'Microphone error: ' + event.error;
+        }
+      };
+
+      recognition.onend = () => {
+        listening = false;
+        micBtn.classList.remove('listening');
+        micLabel.innerText = 'Speak a command';
+        statusDot.classList.remove('live');
+      };
+    } else {
+      micBtn.disabled = true;
+      micLabel.innerText = 'Voice not supported in this browser';
+    }
+
+    function toggleListening() {
+      if (!recognition) return;
+      if (listening) {
+        recognition.stop();
+      } else {
+        recognition.start();
+      }
+    }
+  </script>
+
+</body>
+</html>
