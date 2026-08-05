@@ -19,7 +19,6 @@ if (!array_key_exists($button, $map)) {
 
 $letter = $map[$button];
 
-// تحديث الصف الوحيد (id = 1) بدل إضافة صف جديد
 $stmt = $conn->prepare("UPDATE robot_state SET command = ? WHERE id = 1");
 $stmt->bind_param("s", $letter);
 
