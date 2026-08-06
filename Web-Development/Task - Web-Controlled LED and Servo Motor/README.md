@@ -1,4 +1,4 @@
-# Task 2 - Web-Controlled LED and Servo Motor
+# Task - Web-Controlled LED and Servo Motor
 
 ## Overview
 This project demonstrates IoT (Internet of Things) capabilities by establishing a real-time, two-way communication system between a custom web interface and a micro-controller (Wemos D1 Mini ESP32). The task is divided into two main components:
