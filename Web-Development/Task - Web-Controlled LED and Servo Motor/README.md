@@ -32,7 +32,7 @@ To overcome free-hosting security barriers (which block direct hardware-to-PHP H
   ![LED Control View 2](images/led/Led02.png)
 
 * **Video Demonstration:**
-  [Click here to watch the LED Control Video on Google Drive](https://drive.google.com/file/d/1x3kGflS0WfjqltRMzrd3Mr5O6OMZ0MSj/view?usp=drivesdk)
+  [Click here to watch Video on Google Drive](https://drive.google.com/file/d/1x3kGflS0WfjqltRMzrd3Mr5O6OMZ0MSj/view?usp=drivesdk)
 
 ---
 
@@ -68,15 +68,17 @@ The servo motor requires sufficient power and a PWM-capable data pin. The wiring
   ![Servo Wiring 2](images/servo/Servo02.png)
 
 * **Video Demonstration:**
-  [Click here to watch the Servo Control Video on Google Drive](https://drive.google.com/file/d/1RncZVJ0TkAo9F0bl0y32EZ0FjZwv0fsB/view?usp=drivesdk)
+  [Click here to watch the Video on Google Drive](https://drive.google.com/file/d/1RncZVJ0TkAo9F0bl0y32EZ0FjZwv0fsB/view?usp=drivesdk)
 
 ---
 
-## Project Directories & Files
+## Project Links & Files
+
+🔗 **Live Web Control Pad:** [http://task4.kesug.com](http://task4.kesug.com)
 
 The project source codes are organized into specific directories. Click on any file name below to view its source code:
 
-###  CntrolLed1 (LED Control Files)
+### CntrolLed1 (LED Control Files)
 - [index.html](Codes/CntrolLed1/index.html) - Web UI with LED buttons
 - [led.php](Codes/CntrolLed1/led.php) - Backend state handler
 - [t.txt](Codes/CntrolLed1/t.txt) - Text bridge for ESP32
@@ -85,7 +87,7 @@ The project source codes are organized into specific directories. Click on any f
 - [setup.sql](Codes/CntrolLed1/setup.sql) - Database setup query
 - [monitor.html](Codes/CntrolLed1/monitor.html) - Interface for monitoring
 
-###  cntrolServo (Servo Control Files)
+### cntrolServo (Servo Control Files)
 - [index.html](Codes/cntrolServo/index.html) - Updated Web UI with dual-fetch JS
 - [dir.php](Codes/cntrolServo/dir.php) - Backend directional handler
 - [servo.ino](Codes/cntrolServo/servo.ino) - ESP32 Arduino code with Servo library integration
