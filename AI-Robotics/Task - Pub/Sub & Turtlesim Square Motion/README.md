@@ -26,6 +26,11 @@ The ROS2 tasks were executed using a systematic approach with specific node conf
    * Granted execution permissions (`chmod +x`) and ran both scripts simultaneously in separate terminals using `python3`.
    * *Reason:* To initiate the communication bridge, allowing the publisher to send data while the subscriber actively listens in parallel.
 
+#### Execution View (Pub/Sub Communication)
+![Pub/Sub Terminal View](images/pub_sub.png)
+
+---
+
 ### Part 2: Turtlesim Autonomous Square Trajectory
 
 5. **Simulation Setup (`turtle_scripts`):**
@@ -40,15 +45,10 @@ The ROS2 tasks were executed using a systematic approach with specific node conf
    * Launched the simulation GUI (`ros2 run turtlesim turtlesim_node`) and executed the controller script (`python3 turtle_square.py`) in separate terminals.
    * *Reason:* To establish the connection between the custom logic node and the active simulation environment, driving the robot autonomously.
 
-## Execution Views
-
-### 1. Terminal Output (Pub/Sub Communication)
-
-![Pub/Sub Terminal View](images/pub_sub.png)
-
-### 2. Turtlesim Simulation (Square Trajectory)
-
+#### Execution View (Turtlesim Square Trajectory)
 ![Turtlesim Square View](images/turtle_square.png)
+
+---
 
 ## Project Links & Files
 
