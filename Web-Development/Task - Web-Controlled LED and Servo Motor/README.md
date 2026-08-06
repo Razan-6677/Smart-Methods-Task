@@ -1,4 +1,4 @@
-# Task - Web-Controlled LED and Servo Motor
+# Task 2 - Web-Controlled LED and Servo Motor
 
 ## Overview
 This project demonstrates IoT (Internet of Things) capabilities by establishing a real-time, two-way communication system between a custom web interface and a micro-controller (Wemos D1 Mini ESP32). The task is divided into two main components:
@@ -28,11 +28,11 @@ To overcome free-hosting security barriers (which block direct hardware-to-PHP H
 
 ### Media Gallery
 * **Hardware & Web Demonstration:**
-  ![LED Control View 1](Insert_Image_Link_Here)
-  ![LED Control View 2](Insert_Image_Link_Here)
+  ![LED Control View 1](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/images/led/Led01.png)
+  ![LED Control View 2](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/images/led/Led02.png)
 
 * **Video Demonstration:**
-  [Click here to watch the LED Control Video on Google Drive](Insert_Drive_Video_Link_Here)
+  [Click here to watch the LED Control Video on Google Drive](https://drive.google.com/file/d/1x3kGflS0WfjqltRMzrd3Mr5O6OMZ0MSj/view?usp=drivesdk)
 
 ---
 
@@ -64,28 +64,30 @@ The servo motor requires sufficient power and a PWM-capable data pin. The wiring
 
 ### Media Gallery
 * **Wiring Setup:**
-  ![Servo Wiring](Insert_Wiring_Image_Link_Here)
+  ![Servo Wiring 1](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/images/servo/Servo01.jpg)
+  ![Servo Wiring 2](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/images/servo/Servo02.png)
 
 * **Video Demonstration:**
-  [Click here to watch the Servo Control Video on Google Drive](Insert_Drive_Video_Link_Here)
+  [Click here to watch the Servo Control Video on Google Drive](https://drive.google.com/file/d/1RncZVJ0TkAo9F0bl0y32EZ0FjZwv0fsB/view?usp=drivesdk)
 
 ---
 
 ## Project Directories & Files
 
-The project source codes are organized into specific directories for clarity:
+The project source codes are organized into specific directories. Click on any file name below to view its source code:
 
-###  `CntrolLed1` (LED Control Files)
-- `index.html` (Web UI with LED buttons)
-- `led.php` (Backend state handler)
-- `t.txt` (Text bridge for ESP32)
-- `led.ino` (ESP32 Arduino code for LED)
-- Database & Monitor files (`db.php`, `setup.sql`, `monitor.html`, etc.)
+### 📁 CntrolLed1 (LED Control Files)
+- [index.html](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/index.html) - Web UI with LED buttons
+- [led.php](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/led.php) - Backend state handler
+- [t.txt](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/t.txt) - Text bridge for ESP32
+- [led.ino](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/led.ino) - ESP32 Arduino code for LED
+- [db.php](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/db.php) - Database connection
+- [setup.sql](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/setup.sql) - Database setup query
+- [monitor.html](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/CntrolLed1/monitor.html) - Interface for monitoring
 
-###  `cntrolServo` (Servo Control Files)
-- `index.html` (Updated Web UI with dual-fetch JS)
-- `dir.php` (Backend directional handler)
-- `dir.txt` (Text bridge for ESP32)
-- `servo.ino` (ESP32 Arduino code with Servo library integration)
-- Base tracking files (`update_command.php`, `get_state.php`, etc.)
-
+### 📁 cntrolServo (Servo Control Files)
+- [index.html](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/cntrolServo/index.html) - Updated Web UI with dual-fetch JS
+- [dir.php](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/cntrolServo/dir.php) - Backend directional handler
+- [servo.ino](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/cntrolServo/servo.ino) - ESP32 Arduino code with Servo library integration
+- [update_command.php](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/cntrolServo/update_command.php) - Base tracking file (command updater)
+- [get_state.php](Web-Development/Task%20-%20Web-Controlled%20LED%20and%20Servo%20Motor/Codes/cntrolServo/get_state.php) - Base tracking file (state retriever)
