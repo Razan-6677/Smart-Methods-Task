@@ -26,7 +26,7 @@ In this phase, I defined the required electronic components and their logical co
 *   **Servo Motor Ports (STS3215-12V):** Added 4 ports (U2, U3, U4, U5) to control the robot's legs. The power lines (12V and GND) are routed directly from the main power source, while the data lines are connected to designated GPIO pins on the MCU.
 *   **Sensor Port:** Added a port for the `MQ-2` gas sensor to increase the robot's interaction with its environment, connecting it to power and an analog input pin on the MCU.
 
-![Schematic View](Electronics-Power/Control%20Board%20(PCB)/images/Schematic1.png)
+![Schematic View](Electronics-Power/Control Board (PCB)/images/Schematic1.png)
 
 ---
 
@@ -37,7 +37,7 @@ Here, the schematic was converted into a manufacturable board layout. I applied 
 *   **Trace Width Optimization:** Because the robot's motors draw high current to support the chassis weight during movement, I significantly increased the width of the power traces (12V and GND) to handle the load without overheating. The data traces were kept at standard width since they only transmit low-current signals.
 *   **Silkscreen Labels:** To facilitate the soldering and assembly process later, I added clear yellow silkscreen text next to the ports (e.g., `12V Battery IN`, `MQ-2 Sensor`, and the motor model `STS3215-12V`).
 
-![2D PCB Layout](Electronics-Power/Control%20Board%20(PCB)/images/PCB1.png)
+![2D PCB Layout](Electronics-Power/Control Board (PCB)/images/PCB1.png)
 
 ---
 
@@ -47,4 +47,4 @@ This is the final realistic 3D render of the board before manufacturing.
 *   The layout demonstrates a logical flow of components: the power circuit on the left to regulate electricity upon entry, the microcontroller in the center to distribute commands, and the motor ports on the right for easy wiring to the robot's legs.
 *   Added a personal engineering touch with my signature **(Eng. Razan)** in the bottom right corner to document the ownership of this design.
 
-![3D PCB View](Electronics-Power/Control%20Board%20(PCB)/images/3d1.png)
+![3D PCB View](Electronics-Power/Control Board (PCB)/images/3d1.png)
