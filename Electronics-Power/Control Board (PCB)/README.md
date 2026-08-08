@@ -7,7 +7,7 @@ Design a custom PCB for a quadruped robot that includes:
 *   A main microcontroller (**ESP32**).
 *   Four ports for connecting servo motors(**STS3215-12V**).
 *   A power/battery input port.
-*   A port for a sensor of choice.
+*   A port for a sensor of choice(**MQ-2**).
 *   Logical and organized component placement with clear silkscreen labels for all ports.
 *   A **Double Layer PCB** routing design.
 
