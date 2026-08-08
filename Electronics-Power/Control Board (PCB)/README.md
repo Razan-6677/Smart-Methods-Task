@@ -5,7 +5,7 @@ This repository contains the Printed Circuit Board (PCB) design for the main con
 ### Task Description:
 Design a custom PCB for a quadruped robot that includes:
 *   A main microcontroller (**ESP32**).
-*   Four ports for connecting servo motors.
+*   Four ports for connecting servo motors(**STS3215-12V**).
 *   A power/battery input port.
 *   A port for a sensor of choice.
 *   Logical and organized component placement with clear silkscreen labels for all ports.
