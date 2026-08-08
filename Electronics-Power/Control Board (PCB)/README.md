@@ -1,6 +1,6 @@
 # Quadruped Robot Dog - Main Control Board (PCB)
 
-This repository contains the Printed Circuit Board (PCB) design for the main control unit of my custom Quadruped Robot Dog. The board is designed to be compact, capable of handling high current for the servo motors, and equipped with all necessary ports to operate the robot efficiently.
+This repository contains the Printed Circuit Board (PCB) design for the main control unit of my custom **[Quadruped Robot Dog](https://github.com/Razan-6677/Smart-Methods-Task/tree/main/Mechanical-Engineering/Dog-Robot-3D)**. The board is designed to be compact, capable of handling high current for the servo motors, and equipped with all necessary ports to operate the robot efficiently.
 
 ### Task Description:
 Design a custom PCB for a quadruped robot that includes:
