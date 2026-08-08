@@ -1,50 +1,57 @@
-# Quadruped Robot Dog - Main Control Board (PCB)
+# Quadruped Robot Dog - 3D Parametric Design
 
-This repository contains the Printed Circuit Board (PCB) design for the main control unit of my custom **[Quadruped Robot Dog](https://github.com/Razan-6677/Smart-Methods-Task/tree/main/Mechanical-Engineering/Dog-Robot-3D)**. The board is designed to be compact, capable of handling high current for the servo motors, and equipped with all necessary ports to operate the robot efficiently.
+## About the Project
+This repository contains the 3D design of a quadruped robot for the Smart Methods summer training tasks. This robot was entirely designed and modified using Parametric CAD methodology to meet the engineering requirements for the robot's locomotion.
 
-### Task Description:
-Design a custom PCB for a quadruped robot that includes:
-*   A main microcontroller (**ESP32**).
-*   Four ports for connecting servo motors.
-*   A power/battery input port.
-*   A port for a sensor of choice.
-*   Logical and organized component placement with clear silkscreen labels for all ports.
-*   A **Double Layer PCB** routing design.
+## Tools Used
+* **Primary Design Software:** Onshape (Parametric 3D CAD).
+* Direct modeling was avoided; instead, the models were built geometrically by creating 2D sketches based on precise measurements, which were then converted into 3D models.
 
-**This project was fully designed using [EasyEDA](https://easyeda.com/).**
+## Design Details
+* Designed and assembled the robotic dog chassis (Assembly), ensuring the proper kinematics and movement of all joints.
+* Performed reverse engineering to modify the arm base, creating a low-profile mount to lower the center of gravity and ensure the robot's balance.
+* Customized the base to perfectly fit the dimensions of servo motors such as the STS3215.
+* Added industrial and practical details like cooling vents for the internal electronics.
 
----
+## Future Vision: Hazardous Chemical Response
 
-## Design Phases & Details:
+Imagine this robot living permanently inside a chemical factory or storage facility — always walking around, always watching.
 
-### 1. Schematic Design
-In this phase, I defined the required electronic components and their logical connections to ensure a safe and functional circuit before moving to the physical layout.
+- **The legs** let it patrol the entire site on its own, moving over pipes, uneven floors, and tight spaces a wheeled robot can't reach.
+- **A gas sensor on its body** constantly "smells" the air. The moment it detects a leak, it knows immediately — faster than any human could notice.
+- **The screen on its front** lights up green, yellow, or red so anyone nearby can instantly tell if the area is safe or dangerous, just by looking at it.
+- **The arm** then takes action: it can close a nearby valve to stop the leak from getting worse, place an absorbent pad over the spill to contain it, and collect a small sample so the safety team knows exactly what chemical they're dealing with before they even arrive.
+- **A wireless alert** is sent out at the same time, calling the human team so they can take over the situation safely — the robot buys precious time and reduces risk, but the final decisions stay with people.
 
-**Key Components & Connections:**
-*   **Microcontroller (ESP-WROOM-32 NodeMCU):** The brain of the robot. It is connected to all ports to send control signals to the motors and receive data from the sensor.
-*   **Power Circuit:** Since the robot operates on a 12V battery and the microcontroller requires 5V, I designed a step-down (Buck Converter) circuit using the `LM2596S-5.0` chip. To ensure power stability and prevent voltage fluctuations, I included an Inductor (`L1`), a Capacitor (`C1`), and a Diode (`D1`).
-*   **Servo Motor Ports (STS3215-12V):** Added 4 ports (U2, U3, U4, U5) to control the robot's legs. The power lines (12V and GND) are routed directly from the main power source, while the data lines are connected to designated GPIO pins on the MCU.
-*   **Sensor Port:** Added a port for the `MQ-2` gas sensor to increase the robot's interaction with its environment, connecting it to power and an analog input pin on the MCU.
+In short: the robot is always on guard, catches danger the moment it starts, takes simple first-response actions to slow it down, and calls humans in before things get worse — all without ever putting a person in harm's way first.
 
-![Schematic View](images/Schematic1.png)
+### Why This Matters
+Workplace chemical exposure is a real and ongoing global problem, not a rare edge case:
+* The World Health Organization estimates that hazardous chemical exposure in occupational settings causes **over 370,000 premature deaths every year worldwide**.
+* In the United States alone, OSHA reports **more than 50,000 deaths annually** linked to workplace chemical exposure, with a serious industrial chemical accident occurring roughly **every two and a half days**.
 
----
+A robot that can detect a leak the instant it happens and take basic first-response action before any human enters the danger zone directly targets the exact gap behind these numbers: the delay and direct exposure that happens *before* trained responders arrive.
 
-### 2. 2D PCB Layout & Routing
-Here, the schematic was converted into a manufacturable board layout. I applied professional engineering standards during this phase:
+## Credits & Attribution
+* The robotic **arm** mechanism used in this design is based on the open-source **[SO-ARM100 project](https://github.com/TheRobotStudio/SO-ARM100)** by TheRobotStudio, utilized under the Apache 2.0 License. Only the base mount was modified to fit and integrate with the robot. The rest of the robot — body, chassis, and all four legs — was designed entirely from scratch.
 
-*   **Double Layer PCB:** To avoid crossing wires and short circuits, I utilized both the Top Layer (Red) for direct routing and the Bottom Layer (Blue) for crossing paths.
-*   **Trace Width Optimization:** Because the robot's motors draw high current to support the chassis weight during movement, I significantly increased the width of the power traces (12V and GND) to handle the load without overheating. The data traces were kept at standard width since they only transmit low-current signals.
-*   **Silkscreen Labels:** To facilitate the soldering and assembly process later, I added clear yellow silkscreen text next to the ports (e.g., `12V Battery IN`, `MQ-2 Sensor`, and the motor model `STS3215-12V`).
+## Design Views
+![Design View 1](images/images1.png)
+![Design View 2](images/images2.png)
 
-![2D PCB Layout](images/PCB1.png)
+## Included Files
+In accordance with the task requirements, all design parts have been exported in `STL` format, ready for 3D printing.
 
----
+🔗 **[Download STL Files](Files/Assembly%201%20(2).zip)**
 
-### 3. 3D PCB View & Final Result
-This is the final realistic 3D render of the board before manufacturing. 
+## CAD Workspace
+Interactive design workspace:
 
-*   The layout demonstrates a logical flow of components: the power circuit on the left to regulate electricity upon entry, the microcontroller in the center to distribute commands, and the motor ports on the right for easy wiring to the robot's legs.
-*   Added a personal engineering touch with my signature **(Eng. Razan)** in the bottom right corner to document the ownership of this design.
+🔗 **[Onshape Workspace](https://cad.onshape.com/documents/47190db977abb20ca8b6d95c/w/49268a5758bd2a20957b8ea2/e/e141a62b0fd248f83cad45e9?renderMode=0&uiState=6a71126458da964de8b8cda6)**
 
-![3D PCB View](images/3d1.png)
+> NOTE: If you get a "403 Forbidden" error, just copy the link and paste it into a new tab. Onshape sometimes blocks direct clicks from GitHub.
+
+## References
+* World Health Organization (WHO) — [Chemical Safety and Health Topics](https://www.who.int/health-topics/chemical-safety).
+* U.S. Occupational Safety and Health Administration (OSHA) — *Transitioning to Safer Chemicals: A Toolkit for Employers and Workers*, [osha.gov/safer-chemicals](https://www.osha.gov/safer-chemicals).
+* BlueGreen Alliance — Chemical Safety, [bluegreenalliance.org/work-issue/chemical-safety](https://www.bluegreenalliance.org/work-issue/chemical-safety).
