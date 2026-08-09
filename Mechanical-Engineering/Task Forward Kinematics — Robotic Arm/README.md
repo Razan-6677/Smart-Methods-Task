@@ -73,7 +73,7 @@ y = L0 + L1·sin(θ2) + L2·sin(θ2+θ3) + L3·sin(θ2+θ3+θ4)
 ## 7. Numerical Verification (MATLAB)
 To verify the accuracy of the equations, a simple MATLAB Online script was written to calculate (x, y, z) based on the final equations above.
 
-📄 **[Click here to view the full MATLAB code](Task%20Forward%20Kinematics%20—%20Robotic%20Arm/Code/MatLab.m)**
+📄 **[Click here to view the full MATLAB code](Code/MatLab.m)**
 
 **Result at θ1 = θ2 = θ3 = θ4 = 0°:**
 
