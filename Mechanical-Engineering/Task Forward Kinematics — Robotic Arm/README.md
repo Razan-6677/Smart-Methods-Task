@@ -77,7 +77,7 @@ To verify the accuracy of the equations, a simple MATLAB Online script was writt
 
 **Result at θ1 = θ2 = θ3 = θ4 = 0°:**
 
-![MATLAB Output Result](Task%20Forward%20Kinematics%20—%20Robotic%20Arm/images/Task04.png)
+![MATLAB Output Result](images/Task04.png)
 
 ```text
 x = 185.00 mm
