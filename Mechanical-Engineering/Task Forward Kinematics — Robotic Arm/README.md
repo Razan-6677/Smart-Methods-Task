@@ -8,6 +8,12 @@ The robotic arm in the provided image contains four motors (4 DOF). The objectiv
 * Upper arm — 65 mm
 * Forearm — 100 mm
 
+> ** Key Assumption:** The reference image specifies only 3 dimensions 
+> (base height, upper arm, forearm). The wrist-to-gripper link length was 
+> not given, so we assumed **L3 = 20 mm** as a reasonable estimate — this 
+> allows the 4th motor (wrist joint, θ4) to have a physical effect on the 
+> end-effector position. Full details in Section 3 (Assumptions).
+
 ---
 
 ## 1. Overview
